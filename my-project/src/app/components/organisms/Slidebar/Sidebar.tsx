@@ -1,26 +1,25 @@
 "use client";
-import styles from "./Siderbar.module.css";
 import Image from "next/image";
 
 export default function Sidebar() {
   return (
-    <aside className={styles.sidebar}>
-      <ul>
-        <li>
+    <aside className="w-full md:w-64 lg:w-72 bg-white h-full flex flex-col items-start p-4">
+      <ul className="space-y-4 w-full">
+        <li className="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-md">
           <Image src="/icons/dashboard.svg" alt="Dashboard" width={24} height={24} />
-          Dashboard
+          <span className="text-sm md:text-base">Dashboard</span>
         </li>
-        <li>
-          <Image src="/icons/tasks.svg" alt="Tu racha" width={24} height={24} />
-          Tareas
+        <li className="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-md">
+          <Image src="/icons/tasks.svg" alt="Tareas" width={24} height={24} />
+          <span className="text-sm md:text-base">Tareas</span>
         </li>
-        <li>
+        <li className="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-md">
           <Image src="/icons/racha.svg" alt="Racha" width={24} height={24} />
-          Racha
+          <span className="text-sm md:text-base">Racha</span>
         </li>
-        <li>
+        <li className="flex items-center space-x-2 hover:bg-gray-100 p-2 rounded-md">
           <Image src="/icons/settings.svg" alt="Ajustes" width={24} height={24} />
-          Ajustes
+          <span className="text-sm md:text-base">Ajustes</span>
         </li>
       </ul>
     </aside>
